@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生成绩管理</title>
+    <link rel="stylesheet" href="mark_manage.css">
+</head>
+<body>
+<h1 id="head">学生成绩管理</h1>
+
+<div id="input">
+    <div>
+        <span>姓名：</span>
+        <input type="text" class="input" value="" id="name">
+        <span>班级：</span>
+        <input type="text" class="input" value="" id="class">
+    </div>
+    <div>
+        <span>语文成绩：</span>
+        <input type="text" class="input2" value="" id="chinese">
+        <span>数学成绩：</span>
+        <input type="text" class="input2" value="" id="math">
+        <span>理综成绩：</span>
+        <input type="text" class="input2" value="" id="science">
+    </div>
+    <div>
+        <input type="button" value="提交" id="button" onclick="addStudent()">
+    </div>
+    <div>
+        <input type="button" class="button" value="按语文成绩排序" onclick="arrange('chinese')">
+        <input type="button" class="button" value="按数学成绩排序" onclick="arrange('math')">
+        <input type="button" class="button" value="按理综成绩排序" onclick="arrange('science')">
+        <input type="button" class="button" value="按总成绩排序" onclick="arrange('total')">
+    </div>
+</div>
+
+<div id="tableContainer">
+<table border="1" id="table">
+    <tr>
+        <td class="td">姓名</td>
+        <td class="td">班级</td>
+        <td class="td">语文成绩</td>
+        <td class="td">数学成绩</td>
+        <td class="td">理综成绩</td>
+        <td class="td">总成绩</td>
+    </tr>
+</table>
+</div>
+
+<script type="text/javascript" src="mark_manage.js"></script>
+</body>
+</html>
